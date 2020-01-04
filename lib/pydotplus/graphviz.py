@@ -1994,7 +1994,7 @@ class Dot(Graph):
         p = subprocess.Popen(
             cmdline,
             cwd=tmp_dir,
-            stderr=subprocess.PIPE, stdout=subprocess.PIPE)
+            stderr=subprocess.PIPE, stdin=subprocess.PIPE, stdout=subprocess.PIPE)
 
         stderr = p.stderr
         stdout = p.stdout
